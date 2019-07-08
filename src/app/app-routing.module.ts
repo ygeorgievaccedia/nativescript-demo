@@ -1,15 +1,17 @@
 import { NgModule } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { Routes } from "@angular/router";
-import { ProductsPageComponent } from './modules/products/pages/products-page/products-page.component';
+import { NativeScriptRouterModule } from "nativescript-angular/router";
+
+import { HomePageComponent } from "./modules/home/home-page/home-page.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/products", pathMatch: "full" },
-    { path: "products", component: ProductsPageComponent },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "home", component: HomePageComponent },
+    { path: "products", loadChildren: "./modules/products/products.module.ts#ProductsModule" }
 ];
 
 @NgModule({
     imports: [NativeScriptRouterModule.forRoot(routes)],
     exports: [NativeScriptRouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

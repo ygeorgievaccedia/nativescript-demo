@@ -1,15 +1,12 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
+import { HomeModule } from './modules/home/home.module';
 import { ProductsModule } from './modules/products/products.module';
-
-// Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
-// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { AuthModule } from './modules/auth/auth.module';
 
 @NgModule({
     bootstrap: [
@@ -17,9 +14,11 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
     ],
     imports: [
         NativeScriptModule,
-        AppRoutingModule,
+        NativeScriptHttpClientModule,
+        HomeModule,
         ProductsModule,
-        NativeScriptHttpClientModule
+        AuthModule,
+        AppRoutingModule,
     ],
     declarations: [
         AppComponent

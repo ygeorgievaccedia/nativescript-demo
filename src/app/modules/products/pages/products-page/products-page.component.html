@@ -1,1 +1,4 @@
-<ns-product-list [products]="products$ | async" (itemTap)="listItemTap($event)"></ns-product-list>
+<StackLayout>
+    <Label text="Products Page"></Label>
+    <ns-product-list [products]="products$ | async" (itemTap)="listItemTap($event)"></ns-product-list>
+</StackLayout>

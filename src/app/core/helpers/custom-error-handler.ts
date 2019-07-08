@@ -1,5 +1,5 @@
-import { ErrorHandler, Injector } from '@angular/core';
-import { LoggingService } from '../services/loggin.service';
+import { ErrorHandler, Injector } from "@angular/core";
+import { LoggingService } from "../services/loggin.service";
 
 export class CustomErrorHandler implements ErrorHandler {
     constructor(private readonly inject: Injector) {}
