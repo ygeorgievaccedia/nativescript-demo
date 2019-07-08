@@ -1,0 +1,5 @@
+<ListView [items]="products" (itemTap)="onListItemTap($event)">
+    <ng-template let-item="item">
+        <ns-product [product]="item"></ns-product>
+    </ng-template>
+</ListView>
