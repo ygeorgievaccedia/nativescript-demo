@@ -11,7 +11,7 @@ export class HomePageComponent {
     constructor(private readonly navigationService: NavigationService) {}
 
     public onNavigate() {
-        this.navigationService.navigate(["products", 12], {
+        this.navigationService.navigate(["products"], {
             clearHistory: false, // false by default
             animated: true, // true by default
             transition: {
