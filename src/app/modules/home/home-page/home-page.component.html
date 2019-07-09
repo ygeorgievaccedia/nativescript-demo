@@ -1,3 +1,46 @@
+<ActionBar title="Title">
+  <ActionItem text="left item" ios.position="left"></ActionItem>
+  <ActionItem text="Item" ios.systemIcon="" ios.position="right" android.position="popup"></ActionItem>
+  <ActionItem>
+    <Label class="m-5" text="Custom item" color="#8C489F"></Label>
+  </ActionItem>
+  <ActionItem ios.systemIcon="12" android.systemIcon="ic_menu_search"></ActionItem>
+  <!-- <NavigationButton icon="res://logo" (tap)="onBack()"> </NavigationButton> -->
+</ActionBar>
+
 <StackLayout>
-  <Button text="home-page works!" class="btn btn-primary" (tap)="onNavigate()"></Button>
+  <!-- <Button text="home-page works!" class="btn btn-primary" (tap)="onNavigate()"></Button>
+  <Button text="Show modal" (tap)="showGenericModal()"></Button>
+  <Button text="Show Alert" (tap)="showAlertDialog()"></Button>
+  <Button text="Show Confirm" (tap)="showConfirmDialog()"></Button>
+  <Button text="Show Prompt" (tap)="showPromptDialog()"></Button>
+  <Button text="Show Login" (tap)="showLoginDialog()"></Button>
+  <Button text="Show Action" (tap)="showActionDialog()"></Button> -->
+
+    <!-- <Button text="show notification" (tap)="showNotification()"></Button> -->
+
+  <!-- <ListView [items]="items" [itemTemplateSelector]="templateSelector">
+    <ng-template nsTemplateKey="big" let-item="item">
+      <Label [text]="item.title"></Label>
+    </ng-template>
+
+    <ng-template nsTemplateKey="small" let-item="item">
+      <Label [text]="'small ' + item.title"></Label>
+    </ng-template>
+
+    <ng-template nsTemplateKey="small-no-image" let-item="item">
+      <Label [text]="'no image ' + item.title"></Label>
+    </ng-template>
+  </ListView> -->
+  <!-- <Label class="far" text="&#xf133;"></Label> -->
+  <!-- <TextField id="name"></TextField>
+  <Button text="submit" (tap)="onSubmit($event)"></Button> -->
+
+  <!-- <Button text="Create Elemements" (tap)="onButtonTap($event)"></Button>
+  <Button text="Get locations" (tap)="onGetLocation()"></Button>
+  <Button text="Take picture" (tap)="onTakePicture()"></Button>
+  <Image [src]="imageUrl"></Image> -->
+
+  <!-- <Button text="Platform Declaration Example" (tap)="platformDeclExample()"></Button> -->
+  <Button (tap)="onChangeTestValue()"></Button>
 </StackLayout>

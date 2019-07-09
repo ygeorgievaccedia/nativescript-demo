@@ -1,0 +1,11 @@
+<GridLayout rows="60, *">
+  <FlexboxLayout row="0" justifyContent="space-between">
+    <Button [text]="'Cancel'" height="24" (tap)="onCancelTap($event)"></Button>
+    <Button [text]="btnOkText" (tap)="onSaveTap($event)" class="btn-save"></Button>
+  </FlexboxLayout>
+
+  <StackLayout row="1">
+    <Label text="Enter name"></Label>
+    <TextView [(ngModel)]="name"></TextView>
+  </StackLayout>
+</GridLayout>

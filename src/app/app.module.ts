@@ -1,6 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -17,6 +18,9 @@ import { AuthModule } from './modules/auth/auth.module';
         HomeModule,
         AuthModule,
         AppRoutingModule,
+        TNSFontIconModule.forRoot({
+			'fa': '../app.css'
+		})
     ],
     declarations: [
         AppComponent

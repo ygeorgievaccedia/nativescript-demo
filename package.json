@@ -22,6 +22,10 @@
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
     "nativescript-angular": "~8.0.0",
+    "nativescript-camera": "^4.5.0",
+    "nativescript-geolocation": "^5.1.0",
+    "nativescript-local-notifications": "^4.0.0",
+    "nativescript-ngx-fonticon": "^4.2.1",
     "nativescript-theme-core": "~1.0.4",
     "nativescript-unit-test-runner": "^0.6.4",
     "reflect-metadata": "~0.1.12",
@@ -32,13 +36,14 @@
   "devDependencies": {
     "@angular/compiler-cli": "~8.0.0",
     "@ngtools/webpack": "~8.0.0",
-    "@types/jasmine": "3.3.13",
+    "@types/jasmine": "^3.3.13",
     "karma": "4.1.0",
     "karma-jasmine": "2.0.1",
     "karma-nativescript-launcher": "0.4.0",
     "karma-webpack": "4.0.2",
     "nativescript-dev-typescript": "~0.10.0",
-    "nativescript-dev-webpack": "~0.24.0"
+    "nativescript-dev-webpack": "~0.24.0",
+    "tns-platform-declarations": "^5.4.3"
   },
   "gitHead": "8c1a4866a66daab09bf5ef8e5a96472687192373",
   "readme": "NativeScript Application"

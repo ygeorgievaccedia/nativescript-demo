@@ -1,6 +1,6 @@
 import { Product } from '../models/product.model';
 
-export type StateKey = "users" | "products" | "selectedProduct" | "currentUSer" | "categories" | "defaultCategory";
+export type StateKey = "users" | "products" | "selectedProduct" | "currentUSer" | "categories" | "defaultCategory" | "defaultLanguage";
 
 export interface State {
     users: any[];
@@ -8,6 +8,7 @@ export interface State {
     currentUser: any;
     categories: any[];
     defaultCategory: any;
+    defaultLanguage: string;
     [key: string]: any;
 }
 
@@ -17,5 +18,6 @@ export const INITIAL_STATE: State = {
     selectedProduct: undefined,
     currentUser: undefined,
     categories: [],
-    defaultCategory: undefined
+    defaultCategory: undefined,
+    defaultLanguage: undefined
 }

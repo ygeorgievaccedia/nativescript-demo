@@ -5,9 +5,10 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { HomePageComponent } from "./modules/home/home-page/home-page.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/home", pathMatch: "full" },
+    { path: "", redirectTo: "/widgets", pathMatch: "full" },
     { path: "home", component: HomePageComponent },
-    { path: "products", loadChildren: "./modules/products/products.module#ProductsModule" }
+    { path: "products", loadChildren: "./modules/products/products.module#ProductsModule" },
+    { path: "widgets", loadChildren: "./modules/widgets/widgets.module#WidgetsModule" }
 ];
 
 @NgModule({

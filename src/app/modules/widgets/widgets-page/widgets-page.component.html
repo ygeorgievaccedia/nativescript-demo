@@ -1,0 +1,4 @@
+<StackLayout>
+  <Switch checked="true" (checkedChange)="onCheckedChange($event)" class="m-15"></Switch>
+  <ListPicker [items]="pokemons" selectedIndex="0" (selectedIndexChange)="selectedIndexChanged($event)" class="p-15"></ListPicker>
+</StackLayout>
