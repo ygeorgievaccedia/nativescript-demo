@@ -5,7 +5,6 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeModule } from './modules/home/home.module';
-import { ProductsModule } from './modules/products/products.module';
 import { AuthModule } from './modules/auth/auth.module';
 
 @NgModule({
@@ -16,7 +15,6 @@ import { AuthModule } from './modules/auth/auth.module';
         NativeScriptModule,
         NativeScriptHttpClientModule,
         HomeModule,
-        ProductsModule,
         AuthModule,
         AppRoutingModule,
     ],

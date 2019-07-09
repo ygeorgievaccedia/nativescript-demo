@@ -7,7 +7,7 @@ import { HomePageComponent } from "./modules/home/home-page/home-page.component"
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", component: HomePageComponent },
-    { path: "products", loadChildren: "./modules/products/products.module.ts#ProductsModule" }
+    { path: "products", loadChildren: "./modules/products/products.module#ProductsModule" }
 ];
 
 @NgModule({
